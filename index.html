@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ropa, jeans, pantalones, moda, tienda">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- LINKS -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <!-- CDN ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- FAVICON -->
+  <!-- LOGO DE LA VENTANA QUE SE ABRE CUANDO ENTRO A LA PAGINA -->
+  <link rel="icon" href="./img/Logosuperior.png" type="image/png">
+  <title>Jeans & Jeans Moda Online</title>
+
+</head>
+
+<body>
+
+  <!-- -----HEADER----- -->
+  <header class="header">
+    <img class="bg" src="./img/bg.png" alt=""> <!-- FONDO IMAGEN DE UN JEAN -->
+    <div class="menu container">
+      <a href="#" class="logo">Jeans&Jeans</a>
+      <input type="checkbox" id="menu">
+      <label for="menu">
+        <img src="./img/menu.png" class="menu-icono" alt="">
+      </label>
+
+      <!-- -----NAV----- -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Hombre</a></li>
+          <li><a href="#">Mujer</a></li>
+          <li><a href="#">Niños</a></li>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- -----LOGO CARRITO----- -->
+      <div>
+        <ul>
+          <li class="submenu">
+            <img src="./img/car.svg" id="img-carrito" alt="carrito">
+            <div id="carrito">
+              <table id="lista-carrito">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+              <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-content container">
+      <div class="header-txt">
+        <h1><span>Bienvenidos </span> Disfruta de Nuestra Tienda Online</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia deleniti animi, excepturi, cumque sequi magni ut, hic vero placeat tempore ab dolore aliquam nulla nesciunt quibusdam tempora nisi pariatur!</p>
+        <a href="#" class="btn-1">Información</a>
+      </div>
+      <div class="header-img">
+        <img src="./img/logopng.png" alt="">
+      </div>
+    </div>
+
+  </header>
+
+
+  <!-- -----SECTION 1----- -->
+  <!-- SECCION CON 4 IMAGENES EN SECCION HOMBRES, LO MISMO PARA MUJER Y NINIOS -->
+  <section class="jeans-a container">
+
+    <h2>Hombre</h2>
+    <p>No importa tu talla, importa tu estilo: encontrá tu jean perfecto.</p>
+
+    <div class="jeans-a-content">
+
+      <div class="jeans-a-box">
+        <img src="./img/b1-1.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$5000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="4">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/b2-2.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$9000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="5">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/b3-3.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$7000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="6">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/b4-4.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$10000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="7">Agregar al Carrito</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- -----SECTION 2----- -->
+  <section class="jeans-a container">
+    <h2>Mujer</h2>
+    <p>Porque todos las mujeres merecen un jean que les quede increíble.</p>
+
+    <div class="jeans-a-content">
+
+      <div class="jeans-a-box">
+        <img src="./img/c1-1.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$11000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="8">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/c2-2.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$5500</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="9">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/c3-3.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$6000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="10">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/c4-4.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$3000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="11">Agregar al Carrito</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- -----SECTION 3----- -->
+  <section class="jeans-a container">
+    <h2>Niños</h2>
+    <p>Porque todos las mujeres merecen un jean que les quede increíble.</p>
+
+    <div class="jeans-a-content">
+
+      <div class="jeans-a-box">
+        <img src="./img/d1-1.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$11000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="8">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/d2-2.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$5500</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="9">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/d3-3.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$6000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="10">Agregar al Carrito</a>
+      </div>
+
+      <div class="jeans-a-box">
+        <img src="./img/d4-4.png" alt="">
+        <h3>Jean Skinny Fit</h3>
+        <p>$3000</p>
+        <a href="#" class="btn-4 agregar-carrito" data-id="11">Agregar al Carrito</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- -----SECTION 4----- -->
+  <section class="info">
+
+    <!-- AGREGO DISEñOS (IMAGENES) PARA LA PAGIGNA WEB -->
+
+    <img class="bg-2" src="./img/bg-2.png" alt="">
+
+    <div class="info-content container">
+
+      <div class="info-img">
+        <img src="./img/jeansjeans.png" alt="">
+      </div>
+
+      <div class="info-txt">
+        <h2>Estilo, comodidad y actitud: los mejores jeans los encontrás en J&J</h2>
+        <p>Los mejores momentos se disfrutan con los mejores jeans, y en J&J tenemos el calce perfecto para cada
+          persona, cada día y cada ocasión.</p>
+        <a href="#" class="btn-1">Información</a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- -----MAIN----- -->
+
+  <!-- Muestro otros productos (6) sobre la misma tematica, jeans. -->
+  <main class="productos container">
+
+    <h2>Productos</h2>
+
+    <div class="box-container" id="lista-1">
+
+      <div class="box">
+        <img src="./img/jen1.JPG" alt="">
+        <div class="product-txt">
+          <h3>Jean Skinny Fit</h3>
+          <p>calidad premium</p>
+          <p class="precio">$5000</p>
+          <a href="#" class="agregar-carrito btn-3" data-id="1">Agregar al Carrito</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./img/jen2.JPG" alt="">
+        <div class="product-txt">
+          <h3>Jean Skinny Fit</h3>
+          <p>calidad premium</p>
+          <p class="precio">$5000</p>
+          <a href="#" class="agregar-carrito btn-3" data-id="2">Agregar al Carrito</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./img/jen3.JPG" alt="">
+        <div class="product-txt">
+          <h3>Jean Skinny Fit</h3>
+          <p>calidad premium</p>
+          <p class="precio">$5000</p>
+          <a href="#" class="agregar-carrito btn-3" data-id="3">Agregar al Carrito</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./img/jen4.JPG" alt="">
+        <div class="product-txt">
+          <h3>Jean Skinny Fit</h3>
+          <p>calidad premium</p>
+          <p class="precio">$5000</p>
+          <a href="#" class="agregar-carrito btn-3" data-id="4">Agregar al Carrito</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./img/jen5.jpg" alt="">
+        <div class="product-txt">
+          <h3>Jean Skinny Fit</h3>
+          <p>calidad premium</p>
+          <p class="precio">$5000</p>
+          <a href="#" class="agregar-carrito btn-3" data-id="5">Agregar al Carrito</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./img/jen6.jpg" alt="">
+        <div class="product-txt">
+          <h3>Jean Skinny Fit</h3>
+          <p>calidad premium</p>
+          <p class="precio">$5000</p>
+          <a href="#" class="agregar-carrito btn-3" data-id="6">Agregar al Carrito</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="./img/jen7.jpg" alt="">
+        <div class="product-txt">
+          <h3>Jean Skinny Fit</h3>
+          <p>calidad premium</p>
+          <p class="precio">$5000</p>
+          <a href="#" class="agregar-carrito btn-3" data-id="7">Agregar al Carrito</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="btn-2" id="load-more">Cargar Mas</div>
+
+
+  </main>
+
+  <!-- -----SECTION 5----- -->
+  <section class="app container">
+
+    <div class="app-txt">
+      <h2>Descarga nuestra App</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero ut exercitationem voluptatibus quis iste
+        id repudiandae animi. Aspernatur alias cupiditate error excepturi.</p>
+      <div class="descarga">
+        <img src="./img/store1.png" alt="">
+        <img src="./img/store2.png" alt="">
+      </div>
+
+    </div>
+
+    <div class="app-img">
+      <img src="./img/app.png" alt="">
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- -----FOOTER----- -->
+  <footer class="footer">
+
+    <div class="footer-content container">
+
+      <div class="link">
+        <h3>Lorem</h3>
+        <ul>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+        </ul>
+      </div>
+
+      <div class="link">
+        <h3>Lorem</h3>
+        <ul>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+        </ul>
+      </div>
+
+      <div class="link">
+        <h3>Lorem</h3>
+        <ul>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+          <li><a href="#"></a>Lorem</li>
+        </ul>
+      </div>
+
+      <div class="link">
+        <h3>Lorem</h3>
+        <div class="descarga">
+          <img src="./img/store1.png" alt="">
+          <img src="./img/store2.png" alt="">
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script> src = "https://code.jquery.com/jquery-3.7.1.slim.min.js"</script>
+
+</body>
+
+</html>

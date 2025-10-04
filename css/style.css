@@ -344,5 +344,30 @@ p {
     background-color: #8547a1;
 }
 
+.app {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
 
+.app-txt {
+    width: 50%;
+}
+
+.descarga {
+    display: flex;
+}
+
+.descarga img {
+    width: 140px;
+}
+
+.app-img {
+    width: 50%;
+    text-align: center;
+}
+
+.app-img img {
+    width: 450px;
+}
 

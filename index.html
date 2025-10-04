@@ -9,7 +9,6 @@
   <!-- LINKS -->
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 
 
@@ -25,9 +24,15 @@
 
 </head>
 
-<body>
+<!--NOTAS Utilizamos head, links, body, header, varios divs en mi caso, img, input, label, nav, ul, li, a, table, h1, h2, h3, p,
+section, main, footer, script.
 
-  <!-- -----HEADER----- -->
+Utilizacion de clases (class) para dar un orden correcto al css y dar correctamente y un orden a los estilos para mi pagina-->
+   
+<body>  <!-- es la parte principal de un documento HTML.
+Todo lo que el usuario ve en la página (texto, imágenes, enlaces, menús, etc.) está dentro del <body>. -->
+
+  <!-- -----HEADER----- --> 
   <header class="header">
     <img class="bg" src="./img/bg.png" alt=""> <!-- FONDO IMAGEN DE UN JEAN -->
     <div class="menu container">
@@ -37,8 +42,8 @@
         <img src="./img/menu.png" class="menu-icono" alt="">
       </label>
 
-      <!-- -----NAV----- -->
-      <nav class="navbar">
+      <!-- -----NAV----- -->  
+      <nav class="navbar"> <!-- barra de navegacion principal superior, en mi caso no le doy un background color-->
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Hombre</a></li>
@@ -49,7 +54,7 @@
         </ul>
       </nav>
 
-      <!-- -----LOGO CARRITO----- -->
+      <!-- -----LOGO CARRITO----- No se pidió en clase pero solo lo agrego por ser ecommerce --> 
       <div>
         <ul>
           <li class="submenu">
@@ -64,7 +69,6 @@
                     <th></th>
                   </tr>
                 </thead>
-                <tbody></tbody>
               </table>
               <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
             </div>
@@ -75,11 +79,12 @@
 
     <div class="header-content container">
       <div class="header-txt">
-        <h1><span>Bienvenidos </span> Disfruta de Nuestra Tienda Online</h1>
+        <h1><span>Bienvenidos </span> Disfruta de Nuestra Tienda Online</h1> <!-- solo una vez se puede utilizar h1 -->
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam officia deleniti animi, excepturi, cumque sequi magni ut, hic vero placeat tempore ab dolore aliquam nulla nesciunt quibusdam tempora nisi pariatur!</p>
         <a href="#" class="btn-1">Información</a>
       </div>
-      <div class="header-img">
+      <div class="header-img"> <!-- imagen del logo grande en el header donde es muy importante dar un nombre al class para luego en el css
+        se pueda acomodar la imagen .header-img -->
         <img src="./img/logopng.png" alt="">
       </div>
     </div>
@@ -88,10 +93,10 @@
 
 
   <!-- -----SECTION 1----- -->
-  <!-- SECCION CON 4 IMAGENES EN SECCION HOMBRES, LO MISMO PARA MUJER Y NINIOS -->
+  <!-- SECCION CON 4 IMAGENES EN SECCION HOMBRES, LO MISMO PARA MUJER Y NINIOS, section  divido el contenido en secciones -->
   <section class="jeans-a container">
 
-    <h2>Hombre</h2>
+    <h2>Hombre</h2> <!-- h2, h3, h4 , h5 se puede utilizar cuantas veces quiera -->
     <p>No importa tu talla, importa tu estilo: encontrá tu jean perfecto.</p>
 
     <div class="jeans-a-content">
@@ -128,7 +133,7 @@
 
   </section>
 
-
+  <!-- Se que no se pidió tanto pero agrego mas cards dandole estilos con css. -->
   <!-- -----SECTION 2----- -->
   <section class="jeans-a container">
     <h2>Mujer</h2>
@@ -212,7 +217,7 @@
   <!-- -----SECTION 4----- -->
   <section class="info">
 
-    <!-- AGREGO DISEñOS (IMAGENES) PARA LA PAGIGNA WEB -->
+    <!-- AGREGO DISEñOS, mas IMAGENES y textos PARA LA PAGIGNA WEB -->
 
     <img class="bg-2" src="./img/bg-2.png" alt="">
 
@@ -237,7 +242,7 @@
 
   <!-- -----MAIN----- -->
 
-  <!-- Muestro otros productos (6) sobre la misma tematica, jeans. -->
+  <!-- Muestro otros productos (6) sobre la misma tematica, jeans. donde tendran con class en css su estilo -->
   <main class="productos container">
 
     <h2>Productos</h2>
@@ -346,7 +351,9 @@
 
 
 
-  <!-- -----FOOTER----- -->
+  <!-- -----FOOTER----- pie de página.
+  Generalmente tiene información de contacto, copyright, links secundarios, redes sociales, etc. Aca si le doy un background color como forma
+  de separar-->
   <footer class="footer">
 
     <div class="footer-content container">
@@ -392,15 +399,6 @@
     </div>
 
   </footer>
-
-
-
-
-
-
-
-
-
 
 
 

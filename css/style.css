@@ -371,3 +371,19 @@ p {
     width: 450px;
 }
 
+.footer {
+    background-color: #53a9d1;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.link h3 {
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+

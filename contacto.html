@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/Logosuperior.png" type="image/png">
+    <title>Contáctanos - Jeans&Jeans</title>
+
+    <!-- Eligo en este caso darle estilos desde html usando style -->
+
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /*Vamos dando estilos para mi CARD : Contenedor principal (card) */
+        .contact-card {
+            background-color: rgba(91, 128, 137, 0.95); 
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+            backdrop-filter: blur(10px); /* Efecto de desenfoque para modernidad */
+        }
+
+        /* Título principal */
+        h1 {
+            color: #ffffff; /* Azul oscuro */
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Labels */
+        label {
+            text-align: left;
+            font-weight: bold;
+            color: #040404; 
+            font-size: 1.1em; /* Que es em: 1em = 16px */
+        }
+
+        /* Inputs y textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 12px;
+            border: 2px solid #93c5fd; 
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            background-color: #f8fafc; 
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #1e40af; 
+            box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Boton de envio */
+        button[type="submit"] {
+            background-color: #2563eb; 
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #1d4ed8; 
+            transform: translateY(-2px);
+        }
+
+        /* Mensaje de exito/error no se pidió en clase pero creo que es necesario si se manda el msj o no */
+        .message {
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .success {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+        }
+
+        .error {
+            background-color: #fee2e2;
+            color: #991b1b;
+            border: 1px solid #ef4444;
+        }
+
+        /* rresponsivo */
+        @media (max-width: 600px) {
+            .contact-card {
+                padding: 20px;
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+
+
+<!-- Ahora entramos a body  -->
+<body>
+    <div class="contact-card">
+        <h1>Contáctanos</h1>
+        <form action="https://formsubmit.co/fatturinicarlos@gmail.com" method="POST"> <!-- uso mi email real para poder usar FormSubmit como se pidió en clase-->
+
+           
+             <!--En mi caso, cuando se envía correctamente quiero un mensaje ..opcional-->
+            <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html"> <!-- página de agradecimiento -->
+            <input type="hidden" name="_subject" value="Nuevo mensaje de contacto desde la tienda de ropa">
+            <input type="hidden" name="_captcha" value="false"> 
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+
+            <label for="asunto">Asunto:</label>
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto del mensaje" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..." required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+
+            <!-- Contenedor para mensajes de feedback OPCIONAL -->
+            <div id="message" class="message"></div>
+        </form>
+    </div>
+
+
+    <!-- Página de agradecimiento DESPUES de enviar el mensaje -->
+    <script>
+    
+        const form = document.querySelector('form');
+        const messageDiv = document.getElementById('message');
+
+        form.addEventListener('submit', function() {
+            messageDiv.className = 'message success';
+            messageDiv.textContent = '¡Mensaje enviado! Te contactaremos pronto.';
+            messageDiv.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

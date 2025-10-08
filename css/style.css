@@ -9,7 +9,7 @@
     list-style: none;
 }
 
-
+/* Body */
 body
 {
     font-family: "Poppins", sans-serif;
@@ -21,19 +21,16 @@ body
     margin: 0 auto;
 }
 
+/* Header */
 .header {
     display: flex;
     align-items: center;
-    min-height: 70vh;
+    min-height: 60vh;
     position: relative;
 }
 
 
 /* Navbar */
-
-
-
-
 .menu {
     position: absolute;
     top: 0;

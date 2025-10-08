@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./img/Logosuperior.png" type="image/png">
+    <link rel="icon" href="../img/Logosuperior.png" type="image/png">
     <title>Contáctanos - Jeans&Jeans</title>
 
     <!-- Eligo en este caso darle estilos desde html usando style -->
 
 
     <style>
-        
         * {
             margin: 0;
             padding: 0;
@@ -32,19 +32,21 @@
 
         /*Vamos dando estilos para mi CARD : Contenedor principal (card) */
         .contact-card {
-            background-color: rgba(91, 128, 137, 0.95); 
+            background-color: rgba(91, 128, 137, 0.95);
             border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             padding: 40px;
             max-width: 500px;
             width: 100%;
             text-align: center;
-            backdrop-filter: blur(10px); /* Efecto de desenfoque para modernidad */
+            backdrop-filter: blur(10px);
+            /* Efecto de desenfoque para modernidad */
         }
 
         /* Título principal */
         h1 {
-            color: #ffffff; /* Azul oscuro */
+            color: #ffffff;
+            /* Azul oscuro */
             font-size: 2.5em;
             margin-bottom: 30px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -61,8 +63,9 @@
         label {
             text-align: left;
             font-weight: bold;
-            color: #040404; 
-            font-size: 1.1em; /* Que es em: 1em = 16px */
+            color: #040404;
+            font-size: 1.1em;
+            /* Que es em: 1em = 16px */
         }
 
         /* Inputs y textarea */
@@ -70,18 +73,18 @@
         input[type="email"],
         textarea {
             padding: 12px;
-            border: 2px solid #93c5fd; 
+            border: 2px solid #93c5fd;
             border-radius: 8px;
             font-size: 1em;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            background-color: #f8fafc; 
+            background-color: #f8fafc;
         }
 
         input[type="text"]:focus,
         input[type="email"]:focus,
         textarea:focus {
             outline: none;
-            border-color: #1e40af; 
+            border-color: #1e40af;
             box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
         }
 
@@ -92,7 +95,7 @@
 
         /* Boton de envio */
         button[type="submit"] {
-            background-color: #2563eb; 
+            background-color: #2563eb;
             color: white;
             padding: 15px;
             border: none;
@@ -104,8 +107,24 @@
         }
 
         button[type="submit"]:hover {
-            background-color: #1d4ed8; 
+            background-color: #1d4ed8;
             transform: translateY(-2px);
+        }
+
+        .btn-home {
+            display: block;
+            margin: 25px auto 0 auto;
+            padding: 10px 10px;
+            background-color: #128280;
+            border-radius: 25px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-home:hover {
+            background-color: #7ead8d;
         }
 
         /* Mensaje de exito/error no se pidió en clase pero creo que es necesario si se manda el msj o no */
@@ -144,16 +163,19 @@
 
 
 <!-- Ahora entramos a body  -->
+
 <body>
     <div class="contact-card">
         <h1>Contáctanos</h1>
-        <form action="https://formsubmit.co/fatturinicarlos@gmail.com" method="POST"> <!-- uso mi email real para poder usar FormSubmit como se pidió en clase-->
+        <form action="https://formsubmit.co/fatturinicarlos@gmail.com" method="POST">
+            <!-- uso mi email real para poder usar FormSubmit como se pidió en clase-->
 
-           
-             <!--En mi caso, cuando se envía correctamente quiero un mensaje ..opcional-->
-            <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html"> <!-- página de agradecimiento -->
+
+            <!--En mi caso, cuando se envía correctamente quiero un mensaje ..opcional-->
+            <input type="hidden" name="_next" value="https://tu-sitio.com/gracias.html">
+            <!-- página de agradecimiento -->
             <input type="hidden" name="_subject" value="Nuevo mensaje de contacto desde la tienda de ropa">
-            <input type="hidden" name="_captcha" value="false"> 
+            <input type="hidden" name="_captcha" value="false">
 
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
@@ -169,23 +191,27 @@
 
             <button type="submit">Enviar Mensaje</button>
 
+            <div class="btn-home">
+                <a href="../index.html">Home</a>
+            </div>
+
             <!-- Contenedor para mensajes de feedback OPCIONAL -->
             <div id="message" class="message"></div>
         </form>
     </div>
 
-
     <!-- Página de agradecimiento DESPUES de enviar el mensaje -->
     <script>
-    
+
         const form = document.querySelector('form');
         const messageDiv = document.getElementById('message');
 
-        form.addEventListener('submit', function() {
+        form.addEventListener('submit', function () {
             messageDiv.className = 'message success';
             messageDiv.textContent = '¡Mensaje enviado! Te contactaremos pronto.';
             messageDiv.style.display = 'block';
         });
     </script>
 </body>
+
 </html>
